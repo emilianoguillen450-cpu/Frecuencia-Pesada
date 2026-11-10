@@ -1,0 +1,218 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: Arial, sans-serif;
+    background-color: #121212;
+    color: #e0e0e0;
+    line-height: 2;
+}
+
+header {
+    background-color: #000000;
+    color: #e50914;
+    text-align: center;
+    padding: 20px;
+    border-bottom: 3px solid #e50914;
+}
+
+nav {
+    background-color: #1a1a1a;
+    padding: 10px;
+    position: sticky;
+    text-align: center;
+    top: 0;
+
+}
+
+nav a {
+    color: #ffffff;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+}
+
+nav a:hover, nav a.active {
+    color: #e50914;
+}
+
+section {
+    padding: 40px 20px;
+    max-width: 1000px;
+    margin: auto;
+}
+
+h2 {
+    color: #e50914;
+    margin-bottom: 15px;
+    border-bottom: 1px solid #333;
+    padding-bottom: 5px;
+}
+
+.tarjeta-subgenero{
+    background-color: #1f1f1f;
+    padding: 15px;
+    margin-bottom: 15px;
+    border-left: 4px solid #e50914;
+    border-radius: 4px;
+}
+
+.albumes-lista {
+    white-space: nowrap;
+    overflow-x: auto;
+    padding: 10px;
+}
+
+.albumes-lista .albumes-destacados {
+    display: inline-block;
+    width: 130px;
+    vertical-align: top;
+    margin-right: 15px;
+    background-color: #141414;
+    padding: 10px;
+    border-radius: 6px;
+    text-align: center;
+    border: 1px solid #222;
+}
+
+.albumes-lista img {
+    width: 100%;
+    height: 110px;
+    object-fit: cover;
+    border-radius: 4px;
+    margin-bottom: 8px;
+    text-align: center;
+}
+
+.albumes-lista p {
+    white-space: normal;
+    font-size: medium;
+    margin: 2px 0;
+    text-align: center;
+    
+}
+
+.galeria {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.galeria-banda {
+    background-color: #1f1f1f;
+    border-radius: 8px;
+    overflow: hidden;
+    text-align: center;
+    padding: 10px;
+
+}
+
+.galeria-banda img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 4px;
+    text-align: center;
+}
+
+.galeria-banda p {
+    margin-top: 10px;
+    font-size: smaller;
+    text-align: center;
+}
+
+form {
+    background-color: #1f1f1f;
+    padding: 20px;
+    border-radius: 8px;
+    max-width: 500px;
+    margin: auto;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #333;
+    background-color: #121212;
+    color: #fff;
+    border-radius: 4px;
+}
+
+button {
+    background-color: #e50914;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+    width: 100%;
+}
+
+button:hover {
+    background-color: #b20710;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #000000;
+    color: #868686;
+    margin-top: 40px;
+}
+
+div {
+    text-align: center;
+}
+
+img {
+    transition: transform 0.5s ease;
+}
+
+img:hover {
+    transform: scale(1.1);
+}
+/* Para Teléfonos */
+@media (max-width: 600px) {
+    header h1 {
+        font-size: 1.8rem;
+    }
+
+    header p {
+        font-size: 0.9rem;
+    }
+
+    nav {
+        padding: 8px;
+    }
+
+    nav a {
+        margin: 5px 8px;
+        font-size: 0.9rem;
+    }
+
+    section {
+        padding: 20px 10px;
+    }
+
+    .galeria {
+        grid-template-columns: 1fr;
+    }
+}
+/* Para tablets */
+@media (min-width: 601px) and (max-width: 900px) {
+    section {
+        padding: 30px 15px;
+    }
+}
